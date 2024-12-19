@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Showcase</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color:black; 
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            font-style:inherit;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s, background-color 0.2s;
+            width: calc(25% - 20px);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            flex: 1;
+        }
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .card-content p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-content p {
+    display: block;
+    overflow: visible;
+    text-overflow: initial;
+    color: #ffffff; 
+}
+
+        .button {
+            padding: 8px 16px;
+            margin-top: auto;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: block;
+            margin: auto;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime Showcase</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.kinocheck.com/i/w=400,h=200/6d5siy7dnb.jpg" alt="Naruto">
+            <div class="card-content">
+                <h2>Naruto</h2>
+                <p>Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the village's leader and strongest ninja.</p>
+                <a class="button" href="https://youtu.be/-G9BqkgZXRA">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71oe8OfI4KL._AC_UF894,1000_QL80_.jpg" alt="One Piece">
+            <div class="card-content">
+                <h2>One Piece</h2>
+                <p>Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit, travels the seas in search of the One Piece.</p>
+                <a class="button" href="https://youtu.be/MCb13lbVGE0">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://wallpapers.com/images/hd/titan-eren-attack-on-titan-4k-fa0mmqrf9sp92cxx.jpg" alt="Attack on Titan">
+            <div class="card-content">
+                <h2>Attack on Titan</h2>
+                <p>In a world where humanity resides within enormous walled cities due to the sudden appearance of the Titans, gigantic humanoid creatures, Eren Yeager and his friends join the military to fight the Titans.</p>
+                <a class="button" href="https://www.youtube.com/watch?v=LV-nazLVmgo&pp=ygULYW90IHRyYWlsZXI%3D">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/635/277/HD-wallpaper-my-hero-academia-my-hero-academia-two-heroes.jpg" alt="My Hero Academia">
+            <div class="card-content">
+                <h2>My Hero Academia</h2>
+                <p>Izuku Midoriya, a boy born without superpowers in a world where they are common, dreams of becoming a hero himself.</p>
+                <a class="button" href="https://youtu.be/T5HMoxJRhRY">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.hdwallpapers.in/download/demon_slayer_giyuu_tomioka_gyomei_himejima_kyojuro_rengoku_mitsuri_kanroji_muichiro_tokito_obanai_iguro_sanemi_shinazugawa_shinobu_kochou_tengen_uzui_4k_5k_hd_anime-1920x1080.jpg" alt="Demon Slayer">
+            <div class="card-content">
+                <h2>Demon Slayer</h2>
+                <p>Tanjirou Kamado sets out to become a demon slayer to avenge his family and cure his sister, who was turned into a demon.</p>
+                <a class="button" href="https://youtu.be/FzIQ5js5Lvw">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yrFUh73fTcqSgN3r4LuUBK-4vbulkF74tA&s" alt="Tokyo Ghoul">
+            <div class="card-content">
+                <h2>Tokyo Ghoul</h2>
+                <p>Ken Kaneki, a college student, is transformed into a half-ghoul after being attacked by one, and goes through a struggle to live as a ghoul in Tokyo.</p>
+                <a class="button" href="https://youtu.be/vGuQeQsoRgU">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://storage.googleapis.com/cdn.vcgamers.com/news/wp-content/uploads/2024/01/anime-chainsaw-man-lightsoffshowerthoughts-1.jpeg" alt="Chainsaw man">
+            <div class="card-content">
+                <h2>Chainsaw Man</h2>
+                <p>Chainsaw Man follows the story of Denji, an impoverished teenager who makes a contract that fuses his body with that of a dog-like Devil named Pochita, granting him the ability to transform parts of his body into chainsaws.</p>
+                <a class="button" href="https://youtu.be/FaHY74-6UYs">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjVUmIFJ_-toPsI9rv8R6vK8VmSLU9h4tvQ&s" alt="Death Note">
+            <div class="card-content">
+                <h2>Death Note</h2>
+                <p>Light Yagami finds a supernatural notebook that allows him to kill anyone whose name he writes in it, as he seeks to cleanse the world of evil.</p>
+                <a class="button" href="https://youtu.be/NlJZ-YgAt-c">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images6.alphacoders.com/725/725814.png" alt="Your Name">
+            <div class="card-content">
+                <h2>Your Name</h2>
+                <p>Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person. Two teenagers share a profound, magical connection upon discovering they are swapping bodies.</p>
+                <a class="button" href="https://youtu.be/8N-aES7Rpg4">Watch Full Movie</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/62/605/HD-wallpaper-koe-no-katachi-a-silent-voice-main-characters-couple-shouko-nishimiya-shouya-ishida-thumbnail.jpg" alt="A silent Voice">
+            <div class="card-content">
+                <h2> A Silent Voice</h2>
+                <p>A grade-school student with a hearing impairment is bullied and transfers to another school. Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
+                <a class="button" href="https://youtu.be/DGeWqBUgm60">Watch Full Movie</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.cnet.com/a/img/resize/6e8f5786b688a3871b8e54dbbfce6a59867eed25/hub/2017/08/01/98b2e9d9-dde5-4cae-9437-c99ca30e4c8d/complete-episode-guide-for-the-first-season-of-the-dragon-ball-z-anime.jpg?auto=webp&fit=crop&height=675&width=1200" alt="Dragon Ball Z">
+            <div class="card-content">
+                <h2>Dragon Ball Z</h2>
+                <p>Goku and his friends defend the Earth against villains and search for the Dragon Balls, which can grant any wish.</p>
+                <a class="button" href="https://youtu.be/sxufB6DxXk0">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://staticg.sportskeeda.com/editor/2023/06/14f79-16876349880330-1920.jpg" alt="Hunter x Hunter">
+            <div class="card-content">
+                <h2>Hunter x Hunter</h2>
+                <p>Gon Freecss aspires to become a Hunter, a skilled individual who searches for rare items and elusive creatures.</p>
+                <a class="button" href="https://youtu.be/d6kBeJjTGnY">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/285/884/HD-wallpaper-anime-baki-2018-baki-hanma-character.jpg" alt="Baki Hanama">
+            <div class="card-content">
+                <h2>Baki Hanama</h2>
+                <p>The protagonist, Baki Hanma, trains with an intense focus to become strong enough to surpass his father, Yujiro Hanma, the strongest fighter in the world.</p>
+                <a class="button" href="https://youtu.be/xniBk7zAKMY">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2Kul3zYHQm3MrLSzkCSIzw0rn7D1wecbKw&s" alt="Bleach">
+            <div class="card-content">
+                <h2>Bleach</h2>
+                <p>Ichigo Kurosaki gains the powers of a Soul Reaper and battles evil spirits known as Hollows.</p>
+                <a class="button" href="https://youtu.be/Pi_sIP-wjC0">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.hindustantimes.com/ht-img/img/2023/09/29/1600x900/Evil-Saitama_1695998069122_1695998079247.png" alt="One Punch Man">
+            <div class="card-content">
+                <h2>One Punch Man</h2>
+                <p>Saitama becomes a hero for fun and defeats any opponent with a single punch, leading to boredom and frustration.</p>
+                <a class="button" href="https://youtu.be/1jbgUWsl1z4">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNVUd6flt7CKXI3sQDAHqgYr9npsJfSHKDw&s" alt="Black Clover">
+            <div class="card-content">
+                <h2>Black Clover</h2>
+                <p>Asta dreams of becoming the Wizard King, despite being born without magic in a world where magic is everything.</p>
+                <a class="button" href="https://youtu.be/PrgxJ1_sUcs">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets1.ignimgs.com/2021/02/16/jujutsu-kaisen-1613518270587_160w.jpg?width=1280" alt="jujutsu kaisen">
+            <div class="card-content">
+                <h2>Jujutsu Kaisen</h2>
+                <p> The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, to whom Yuji becomes the host.</p>
+                <a class="button" href="https://youtu.be/Pm-wNmS9RGI">Watch trailer</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.lemde.fr/2022/12/22/5/0/1730/865/1440/720/60/0/e968e4d_1671703423578-b5e.jpeg" alt="Pokemon">
+            <div class="card-content">
+                <h2>Pokemon</h2>
+                <p>Ash Ketchum, a young boy from Pallet Town, comes of age and gains the right to be a Pokémon trainer, hoping to achieve his dream of becoming a Pokémon Master.</p>
+                <a class="button" href="https://youtu.be/9lES7wavO5E">Watch Trailer</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Anime Showcase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
